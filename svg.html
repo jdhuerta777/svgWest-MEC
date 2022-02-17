@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SVG Project </title>
+
+    <link rel = "stylesheet" href = "svg.css">
+</head>
+<body>
+    <svg width="1200px" height="900px">
+        <circle cx="550" cy="150" r="40" stroke="gray" stroke-width="3" fill="lightgrey"/>
+        <polygon points="550,192 500,320 600,320" style="fill:lightgrey;stroke:gray;stroke-width:3" />
+        <line x1="420" y1="180" x2="532" y2="238" style="stroke:grey;stroke-width:3" />
+        <line x1="670" y1="180" x2="568" y2="238" style="stroke:grey;stroke-width:3" />
+        <line x1="518" y1="320" x2="500" y2="390" style="stroke:grey;stroke-width:3" />
+        <polyline points="580,320 590,340 600,350 610,340 610,330 610,290" style="fill:none;stroke:grey;stroke-width:3" />
+
+        <!-- Hair -->
+        <polyline points="525,120 520,110 510,105 505,105 505,105 495,115 495,130 490,145 480,145" style="fill:none;stroke:grey;stroke-width:3" />
+        <polyline points="579,120 584,110 594,105 599,105 599,105 609,115 609,130 614,145 624,145" style="fill:none;stroke:grey;stroke-width:3" />
+
+        <!-- ORB -->
+        <defs>
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+              <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+              <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+            </radialGradient>
+          </defs>
+          <circle cx="420" cy="170" r="25" fill="url(#grad1)" />
+        <!-- Background -->
+        <!-- <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /> -->
+    </svg>
+</body>
+</html>
